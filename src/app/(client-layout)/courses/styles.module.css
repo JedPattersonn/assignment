@@ -1,0 +1,24 @@
+.courseGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .courseGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .courseGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}

@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  id                   Int              @id @default(autoincrement())
+  course_title         String
+  course_type          CourseType
+  course_summary       String
+  course_award_name    String
+  ucas_code            String?
+  ucas_points          Int?
+  year_of_entry        String
+  mode_of_attendance   ModeOfAttendance
+  study_length         String
+  has_foundation_year  Boolean
+  course_subject       Subject          @relation(fields: [course_subject_id], references: [id])
+  course_subject_id    Int
+  no_longer_recruiting Boolean
+}
+
+model Subject {
+  id     Int      @id @default(autoincrement())
+  name   String
+  Course Course[]
+}
+
+enum CourseType {
+  UNDERGRADUATE
+  POSTGRADUATE
+}
+
+enum ModeOfAttendance {
+  FULL_TIME
+  PART_TIME
+}
