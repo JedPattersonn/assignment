@@ -26,7 +26,7 @@ export default function AdminLoginPage() {
         <h1>Admin Login</h1>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password (password=cantor)</label>
             <input
               type="password"
               id="password"

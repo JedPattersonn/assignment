@@ -14,7 +14,6 @@
 
 .table {
   min-width: 100%;
-  background: white;
   border-collapse: collapse;
   margin-top: 16px;
 }
@@ -26,14 +25,6 @@
   text-align: left;
 }
 
-.table th {
-  background-color: #f5f5f5;
-}
-
-.table tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -43,8 +34,6 @@
 
 .button {
   padding: 0.5rem 1rem;
-  background-color: #0070f3;
-  color: white;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;

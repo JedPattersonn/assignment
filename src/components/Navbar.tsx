@@ -29,11 +29,17 @@ export function Navbar() {
         >
           ✕
         </button>
-        <Link href="/information-for-students" className={styles.link}>
+        <Link href="/information-for-staff" className={styles.link}>
           Information for Staff
         </Link>
         <Link href="/information-for-students" className={styles.link}>
           Information for Students
+        </Link>
+        <Link href="/information-for-businesses" className={styles.link}>
+          Information for Businesses
+        </Link>
+        <Link href="/learning-resources" className={styles.link}>
+          Learning Resources
         </Link>
         <Link href="/courses" className={styles.link}>
           Courses
